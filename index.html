@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sneakers Empire – Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap + Animate.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to main content</a>
+ <!----- Header Section -----> 
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+
+        <a class="logo d-flex align-items-center" href="index.html">
+          <span class="icon">👟</span>
+          <span class="name ms-2">
+            <span class="main">Sneakers</span>
+            <span class="accent">Empire</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a class="nav-link active" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">About</a></li>
+            <li><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+    <!----- Home Section -----> 
+  <main id="main">
+
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Left side -->
+          <div class="col-lg-7 left">
+
+            <div class="card-box mb-4">
+              <div class="row g-0 align-items-center">
+
+                <div class="col-5">
+                  <picture>
+                    <source srcset="./Images/image1.png" media="(min-width: 768px)">
+                    <img src="./Images/image1.png" class="img-fluid" alt="Sneaker">
+                  </picture>
+                </div>
+
+                <div class="col-7">
+                  <div class="p-3">
+                    <p class="small text-uppercase mb-1">Welcome To Our Big Empire of Sneakers</p>
+                    <p class="fw-semibold mb-0">Sneakers EMPIRE</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <h1 class="title animate__animated animate__fadeInDown">Trust The Empire</h1>
+            <p class="text">At Sneakers Empire, we are more than a store. We are a movement.</p>
+
+            <h2 class="sub">Authenticity Guaranteed</h2>
+            <p class="text">100% legit, verified kicks only.</p>
+
+            <h2 class="sub">Limited Edition</h2>
+            <p class="text">Exclusive drops and collector pairs.</p>
+
+            <button class="btn-subscribe">Subscribe</button>
+
+            <!-- Collection -->
+            <h2 class="collection-title mt-5">Our Collection</h2>
+
+            <div class="row g-3 gallery mt-3">
+              <div class="col-6 col-md-3">
+                <img src="./Images/img2.jpg" class="img-fluid gallery-img" alt="Nike sneaker in black and white displayed against a clean studio background">
+              </div>
+              <div class="col-6 col-md-3">
+                <img src="./Images/imag4.jpg" class="img-fluid gallery-img" alt="Limited edition sneaker in exclusive design showcased in professional setting">
+              </div>
+              <div class="col-6 col-md-3">
+                <img src="./Images/image5.jpg" class="img-fluid gallery-img" alt="Collectible sneaker in authentic condition displayed as part of premium footwear selection">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right side -->
+          <div class="col-lg-5 right">
+            <img src="./Images/imag3.jpg" class="img-fluid hero-img" alt="Sneakers displayed together">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+ <!----- Footer Section -----> 
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row pb-3">
+
+        <div class="col-md-4 mb-3">
+          <h2 class="footer-name">Sneakers Empire</h2>
+          <p class="footer-text">100% legit sneakers for the empire.</p>
+          <div class="social">
+            <a href="#" class="s-box">Fb</a>
+            <a href="#" class="s-box">Ig</a>
+            <a href="#" class="s-box">Yt</a>
+          </div>
+        </div>
+
+        <nav class="col-md-4">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Streetwear Heat</a></li>
+            <li><a href="#">Limited Drops</a></li>
+          </ul>
+        </nav>
+
+        <nav class="col-md-4">
+          <h3 class="footer-title">About</h3>
+          <ul class="links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="text-center">
+        <small>&copy; <span id="year"></span> Sneakers Empire</small>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
